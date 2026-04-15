@@ -1,1 +1,65 @@
-Hello World!
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Ian Hale's portfolio, or whatever</title>
+	<meta name="description" content="A simple static site">
+	<style>
+		:root {
+			--bg: #1f1f1f;
+			--text: #f5f5f7;
+			--muted: #cfcfcf;
+			--accent: #9bdcff;
+		}
+		html,body {height:100%}
+		body{
+			margin:0;
+			min-height:100%;
+			background-color:var(--bg);
+			color:var(--text);
+			font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+			line-height:1.5;
+			padding:2rem;
+		}
+		a{color:var(--accent)}
+		.container{max-width:900px;margin:0 auto}
+		header{margin-bottom:2rem}
+		h1{font-size:2rem;margin:0 0 .25rem}
+		p.lead{color:var(--muted);margin-top:0}
+		footer{margin-top:4rem;color:var(--muted);font-size:.9rem}
+		@media (prefers-color-scheme: light) {
+			:root { --bg: #ffffff; --text: #111111; --muted:#444; }
+			body { background-color: var(--bg); color: var(--text); }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Ian Hale's portfolio, or whatever</h1>
+			<p class="lead">Based out of the frigid Colorado Rockies, I build and explore systems with a focus on security, infrastructure, and web development.</p>
+		</header>
+
+		<main>
+			<p>links:</p>
+
+            <ul>
+                <li><a href="https://github.com/snodrift">github.com/snodrift</a></li>
+                <li><a href="https://www.linkedin.com/in/ian-hale-7504993b7/">linkedin.com/in/ian-hale-7504993b7</a></li>
+            </ul>
+		</main>
+
+		<footer>
+			<p>&copy; <span id="year">2026</span> Ian Hale</p>
+		</footer>
+	</div>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
+
