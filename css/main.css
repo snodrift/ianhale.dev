@@ -1,0 +1,165 @@
+:root {
+  --bg: #0d0f0e;
+  --surface: #131614;
+  --border: #1e2320;
+  --accent: #4afa8a;
+  --accent-dim: #2a7a4a;
+  --muted: #4a5550;
+  --text: #c8d4ce;
+  --text-bright: #e8f0ec;
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'IBM Plex Sans', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 2. GLOBAL SHARED STYLES --- */
+a { color: var(--accent); text-decoration: none; transition: opacity 0.15s; }
+a:hover { opacity: 0.7; }
+
+h1 {
+  font-family: var(--mono);
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 600;
+  color: var(--text-bright);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.container, .page {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 40px 80px;
+}
+
+/* Background Grain Effect */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 36px;
+  margin-bottom: 48px;
+  animation: fadeUp 0.6s ease both;
+}
+
+footer { margin-top: 4rem; color: var(--muted); font-size: .9rem; }
+
+/* --- 3. RESUME-SPECIFIC COMPONENTS --- */
+.tag-line {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.contact-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.contact-item { font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+/* Experience Entries */
+.entry {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 20px;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.entry-title { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--text-bright); }
+.entry-org { font-size: 13px; color: var(--accent); margin-bottom: 6px; }
+.entry-date { font-family: var(--mono); font-size: 11px; color: var(--muted); text-align: right; }
+
+/* Global Lists & Resume Bullets */
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 0.75rem; position: relative; font-weight: 300; }
+
+/* Bullet Arrow */
+.entry-bullets li, li.list-item { padding-left: 16px; font-size: 13px; }
+.entry-bullets li::before, li.list-item::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-dim);
+  font-size: 11px;
+  top: 5px;
+}
+
+/* Skills Grid */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.skill-group { background: var(--surface); border: 1px solid var(--border); padding: 14px 16px; }
+.skill-tag { font-family: var(--mono); font-size: 11px; color: var(--text); background: var(--bg); border: 1px solid var(--border); padding: 2px 8px; }
+
+/* Education */
+.edu-entry { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.edu-badge { font-family: var(--mono); font-size: 10px; padding: 3px 8px; border: 1px solid var(--accent-dim); color: var(--accent); }
+
+/* --- 4. ANIMATIONS & RESPONSIVE --- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section { animation: fadeUp 0.6s ease both; }
+section:nth-child(2) { animation-delay: 0.08s; }
+section:nth-child(3) { animation-delay: 0.16s; }
+
+@media (max-width: 600px) {
+  .page, .container { padding: 32px 20px 60px; }
+  .entry { grid-template-columns: 1fr; }
+  .entry-date { text-align: left; margin-bottom: 6px; }
+}
+
+@media print {
+  .grain { display: none; }
+  :root { --bg: white; --text: #333; --text-bright: #000; --border: #ddd; }
+  body { background: white; }
+}
