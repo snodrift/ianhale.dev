@@ -22,196 +22,200 @@
 <meta name="author" content="Ian Hale" />
 <title>Ian Hale | Systems Software Developer & Security Specialist | Boulder, Colorado</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="grain"></div>
-<div class="page">
+  <div class="grain"></div>
+  <main class="page">
+    <header class="page__header">
+      <p class="page__eyebrow">Systems · Security · Infrastructure</p>
+      <h1 class="page__title">Ian Hale</h1>
+      <p class="page__subtitle">Boulder, CO</p>
+      <address class="page__contact">
+        <ul class="contact-list">
+          <li class="contact-list__item"><a href="mailto:ian@ianhale.dev">ian@ianhale.dev</a></li>
+          <li class="contact-list__item"><a href="https://ianhale.dev" target="_blank" rel="noopener noreferrer">ianhale.dev</a></li>
+          <li class="contact-list__item"><a href="https://github.com/snodrift" target="_blank" rel="noopener noreferrer">github.com/snodrift</a></li>
+        </ul>
+      </address>
+    </header>
 
-  <header>
-    <div class="tag-line">Systems · Security · Infrastructure</div>
-    <h1>Ian Hale</h1>
-    <div class="subtitle">Boulder, CO</div>
-    <div class="contact-row">
-      <span class="contact-item"><a href="mailto:ian@ianhale.dev">ian@ianhale.dev</a></span>
-      <span class="dot"></span>
-      <span class="contact-item"><a href="https://ianhale.dev" target="_blank">ianhale.dev</a></span>
-      <span class="dot"></span>
-      <span class="contact-item"><a href="https://github.com/snodrift" target="_blank">github.com/snodrift</a></span>
-    </div>
-  </header>
+    <section class="section section--profile">
+      <h2 class="section__title">Profile</h2>
+      <p class="profile__text">
+        Self-taught background in Linux infrastructure, full-stack web development, and network administration. With roots in network administration, full-stack web development, and Linux infrastructure, I build and maintain production server environments from the ground up. Currently pursuing a B.S. in Cybersecurity with a focus on offensive security, hardened OS environments, and network defense. Comfortable operating in low-documentation, figure-it-out contexts.
+      </p>
+    </section>
 
-  <section>
-    <div class="section-label">Profile</div>
-    <p style="font-size:14px; line-height:1.8; max-width:640px;">
-Self-taught background in Linux infrastructure, full-stack web development, and network administration. with roots
-in network administration, full-stack web development, and Linux infrastructure. Experience building and
-maintaining production server environments from the ground up. Currently pursuing a B.S. in Cybersecurity with a
+    <section class="section section--experience">
+      <h2 class="section__title">Experience</h2>
 
-focus on offensive security, hardened OS environments, and network defense. Comfortable operating in low-
-documentation, figure-it-out contexts.    </p>
-  </section>
-
-  <section>
-    <div class="section-label">Experience</div>
-
-    <div class="entry">
-      <div class="entry-title">System Administrator &amp; Web Developer</div>
-      <div class="entry-date">~2012–2016</div>
-      <div class="entry-org">Okota Films</div>
-      <ul class="entry-bullets">
-        <li>Designed and deployed physical server infrastructure from scratch on Debian Linux</li>
-        <li>Built full-stack web presence: custom PHP/MySQL frontend and backend, end-to-end</li>
-        <li>Implemented performance stack: HAProxy load balancing, Varnish caching, Nginx reverse proxy</li>
-        <li>Snort IDS and other countermeasures</li>
-        <li>Applied user input validation and hardening practices for public-facing web applications</li>
-        <li>Sole technical operator — owned infrastructure, deployment, and ongoing maintenance</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-title">Open Source Contributor — Backend</div>
-      <div class="entry-date">Volunteer</div>
-      <div class="entry-org">Greenstand Tree Tracker</div>
-      <ul class="entry-bullets">
-        <li>Contributed to API development and backend infrastructure for open-source reforestation tracking platform</li>
-        <li>Collaborated in distributed volunteer engineering environment</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-title">Network Technician</div>
-      <div class="entry-date">Contract</div>
-      <div class="entry-org">TJ Monday Networking</div>
-      <ul class="entry-bullets">
-        <li>Physical network installation: cable runs, termination, and structured cabling</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-title">Freelance Web Developer &amp; IT Consultant</div>
-      <div class="entry-date">Various</div>
-      <div class="entry-org">Independent</div>
-      <ul class="entry-bullets">
-        <li>LAMP stack development and Linux system administration for small clients</li>
-        <li>Home network diagnosis, malware remediation, and workstation support</li>
-        <li>Word-of-mouth technical support — scanning, repair, and maintenance</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-title">Sous Chef</div>
-      <div class="entry-date">Prior</div>
-      <div class="entry-org">Idlewild — Winter Park, CO</div>
-    </div>
-
-  </section>
-
-  <section>
-    <div class="section-label">Technical Skills</div>
-    <div class="skills-grid">
-
-      <div class="skill-group">
-        <div class="skill-group-name">Languages</div>
-        <div class="skill-tags">
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Bash</span>
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">HTML/CSS</span>
-          <span class="skill-tag">JavaScript</span>
+      <article class="experience__item">
+        <div class="experience__heading">
+          <h3 class="experience__title">System Administrator &amp; Web Developer</h3>
+          <p class="experience__org">Okota Films</p>
         </div>
-      </div>
+        <p class="experience__date">~2012–2016</p>
+        <ul class="experience__bullets">
+          <li>Designed and deployed physical server infrastructure from scratch on Debian Linux</li>
+          <li>Built full-stack web presence: custom PHP/MySQL frontend and backend, end-to-end</li>
+          <li>Implemented performance stack: HAProxy load balancing, Varnish caching, Nginx reverse proxy</li>
+          <li>Snort IDS and other countermeasures</li>
+          <li>Applied user input validation and hardening practices for public-facing web applications</li>
+          <li>Sole technical operator — owned infrastructure, deployment, and ongoing maintenance</li>
+        </ul>
+      </article>
 
-      <div class="skill-group">
-        <div class="skill-group-name">Databases</div>
-        <div class="skill-tags">
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">MongoDB</span>
+      <article class="experience__item">
+        <div class="experience__heading">
+          <h3 class="experience__title">Open Source Contributor — Backend</h3>
+          <p class="experience__org">Greenstand Tree Tracker</p>
         </div>
-      </div>
+        <p class="experience__date">Volunteer</p>
+        <ul class="experience__bullets">
+          <li>Contributed to API development and backend infrastructure for open-source reforestation tracking platform</li>
+          <li>Collaborated in distributed volunteer engineering environment</li>
+        </ul>
+      </article>
 
-      <div class="skill-group">
-        <div class="skill-group-name">Systems</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Debian</span>
-          <span class="skill-tag">CentOS</span>
-          <span class="skill-tag">OpenBSD</span>
-          <span class="skill-tag">Arch Linux</span>
+      <article class="experience__item">
+        <div class="experience__heading">
+          <h3 class="experience__title">Network Technician</h3>
+          <p class="experience__org">TJ Monday Networking</p>
         </div>
-      </div>
+        <p class="experience__date">Contract</p>
+        <ul class="experience__bullets">
+          <li>Physical network installation: cable runs, termination, and structured cabling</li>
+        </ul>
+      </article>
 
-      <div class="skill-group">
-        <div class="skill-group-name">Infrastructure</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Nginx</span>
-          <span class="skill-tag">HAProxy</span>
-          <span class="skill-tag">Varnish</span>
-          <span class="skill-tag">LAMP</span>
+      <article class="experience__item">
+        <div class="experience__heading">
+          <h3 class="experience__title">Freelance Web Developer &amp; IT Consultant</h3>
+          <p class="experience__org">Independent</p>
         </div>
-      </div>
+        <p class="experience__date">Various</p>
+        <ul class="experience__bullets">
+          <li>LAMP stack development and Linux system administration for small clients</li>
+          <li>Home network diagnosis, malware remediation, and workstation support</li>
+          <li>Word-of-mouth technical support — scanning, repair, and maintenance</li>
+        </ul>
+      </article>
 
-      <div class="skill-group">
-        <div class="skill-group-name">Security</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Firewall config</span>
-          <span class="skill-tag">IDS</span>
-          <span class="skill-tag">Packet analysis</span>
-          <span class="skill-tag">HTB / THM</span>
+      <article class="experience__item">
+        <div class="experience__heading">
+          <h3 class="experience__title">Sous Chef</h3>
+          <p class="experience__org">Idlewild — Winter Park, CO</p>
         </div>
-      </div>
+        <p class="experience__date">Prior</p>
+      </article>
+    </section>
 
-      <div class="skill-group">
-        <div class="skill-group-name">Networking</div>
-        <div class="skill-tags">
-          <span class="skill-tag">TCP/IP</span>
-          <span class="skill-tag">Structured cabling</span>
-          <span class="skill-tag">DNS</span>
-          <span class="skill-tag">VPN</span>
+    <section class="section section--skills">
+      <h2 class="section__title">Technical Skills</h2>
+      <div class="skills">
+        <article class="skills__group">
+          <h3 class="skills__group-title">Languages</h3>
+          <ul class="skills__tags">
+            <li class="skills__tag">PHP</li>
+            <li class="skills__tag">Python</li>
+            <li class="skills__tag">Bash</li>
+            <li class="skills__tag">C</li>
+            <li class="skills__tag">HTML/CSS</li>
+            <li class="skills__tag">JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="skills__group">
+          <h3 class="skills__group-title">Databases</h3>
+          <ul class="skills__tags">
+            <li class="skills__tag">MySQL</li>
+            <li class="skills__tag">PostgreSQL</li>
+            <li class="skills__tag">MongoDB</li>
+          </ul>
+        </article>
+
+        <article class="skills__group">
+          <h3 class="skills__group-title">Systems</h3>
+          <ul class="skills__tags">
+            <li class="skills__tag">Debian</li>
+            <li class="skills__tag">CentOS</li>
+            <li class="skills__tag">OpenBSD</li>
+            <li class="skills__tag">Arch Linux</li>
+          </ul>
+        </article>
+
+        <article class="skills__group">
+          <h3 class="skills__group-title">Infrastructure</h3>
+          <ul class="skills__tags">
+            <li class="skills__tag">Nginx</li>
+            <li class="skills__tag">HAProxy</li>
+            <li class="skills__tag">Varnish</li>
+            <li class="skills__tag">LAMP</li>
+          </ul>
+        </article>
+
+        <article class="skills__group">
+          <h3 class="skills__group-title">Security</h3>
+          <ul class="skills__tags">
+            <li class="skills__tag">Firewall config</li>
+            <li class="skills__tag">IDS</li>
+            <li class="skills__tag">Packet analysis</li>
+            <li class="skills__tag">HTB / THM</li>
+          </ul>
+        </article>
+
+        <article class="skills__group">
+          <h3 class="skills__group-title">Networking</h3>
+          <ul class="skills__tags">
+            <li class="skills__tag">TCP/IP</li>
+            <li class="skills__tag">Structured cabling</li>
+            <li class="skills__tag">DNS</li>
+            <li class="skills__tag">VPN</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--education">
+      <h2 class="section__title">Education &amp; Certifications</h2>
+
+      <article class="education__item">
+        <div class="education__details">
+          <h3 class="education__title">B.S. Cybersecurity</h3>
+          <p class="education__subtitle">Western Governors University — in progress</p>
         </div>
-      </div>
+        <span class="education__status">In Progress</span>
+      </article>
 
-    </div>
-  </section>
+      <article class="education__item">
+        <div class="education__details">
+          <h3 class="education__title">OSCP — Offensive Security Certified Professional</h3>
+          <p class="education__subtitle">Offensive Security</p>
+        </div>
+        <span class="education__status">Planned</span>
+      </article>
 
-  <section>
-    <div class="section-label">Education &amp; Certifications</div>
+      <article class="education__item">
+        <div class="education__details">
+          <h3 class="education__title">HackTheBox / TryHackMe</h3>
+          <p class="education__subtitle">Ongoing practical offensive security training</p>
+        </div>
+        <span class="education__status">Active</span>
+      </article>
 
-    <div class="edu-entry">
-      <div>
-        <div class="edu-title">B.S. Cybersecurity</div>
-        <div class="edu-sub">Western Governors University — in progress</div>
-      </div>
-      <div class="edu-badge">In Progress</div>
-    </div>
+      <article class="education__item">
+        <div class="education__details">
+          <h3 class="education__title">OSSU — Open Source Society University</h3>
+          <p class="education__subtitle">Harvard, MIT | edX</p>
+        </div>
+        <span class="education__status">Completed</span>
+      </article>
+    </section>
 
-    <div class="edu-entry">
-      <div>
-        <div class="edu-title">OSCP — Offensive Security Certified Professional</div>
-        <div class="edu-sub">Offensive Security</div>
-      </div>
-      <div class="edu-badge">Planned</div>
-    </div>
-
-    <div class="edu-entry">
-      <div>
-        <div class="edu-title">HackTheBox / TryHackMe</div>
-        <div class="edu-sub">Ongoing practical offensive security training</div>
-      </div>
-      <div class="edu-badge">Active</div>
-    </div>
-
-    <div class="edu-entry">
-      <div>
-        <div class="edu-title">OSSU — Open Source Society University</div>
-        <div class="edu-sub">Harvard, MIT |  edX</div>
-      </div>
-      <div class="edu-badge">Completed</div>
-    </div>
-
-  </section>
-
-</div>
+    <footer class="page__footer">
+      <p>© 2026 Ian Hale</p>
+    </footer>
+  </main>
 </body>
 </html>
